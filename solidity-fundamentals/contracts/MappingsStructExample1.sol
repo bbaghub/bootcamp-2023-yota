@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract MappingsStructExample {
+contract MappingsStructExample1 {
     mapping(address => uint) public balanceReceived;
 
     function getBalance() public view returns(uint) {
