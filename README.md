@@ -2,7 +2,10 @@
 
 This repository contains
 
-* Sample solidity introductory contracts.
-* Two projects
-    - Token-Based Voting Project
-    - Time-Locked Savings Project
+- Sample solidity introductory contracts.
+- Two projects
+  - Token-Based Voting Project
+  - Time-Locked Savings Project
+- Resources
+  - Solidity types.
+  - Solidity units and globally available variables.
