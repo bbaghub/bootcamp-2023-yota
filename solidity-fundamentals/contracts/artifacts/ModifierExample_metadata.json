@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity-fundamentals/contracts/Modifier.sol": "ModifierExample"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity-fundamentals/contracts/Modifier.sol": {
+			"keccak256": "0x218834a37bcc36f0ad49b999d1a3c2e8f151c4077b58cb0c189a0f0304f6fbbd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://881d005ce33c6844f5113b290fc94bc5aad4e10b10796310e5cf3c1d3cbd096d",
+				"dweb:/ipfs/QmQiadzRgMR6BCvVyBRmYYw1jxm5No4rTJVNrqg1mYTY7p"
+			]
+		}
+	},
+	"version": 1
+}
