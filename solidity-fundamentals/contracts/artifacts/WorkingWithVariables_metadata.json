@@ -1,10 +1,50 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.22+commit.4fc1097e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [],
+				"name": "decrementUint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalanceOfAddress",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "incrementUint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
 			{
 				"inputs": [],
 				"name": "myBool",
@@ -13,6 +53,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -32,6 +85,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "myUint8",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "setAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bool",
@@ -40,6 +119,19 @@
 					}
 				],
 				"name": "setMyBool",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mystring",
+						"type": "string"
+					}
+				],
+				"name": "setMyString",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -86,11 +178,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/Variables.sol": {
-			"keccak256": "0xf97e9e06ab2cb491192c749d52a6089919917b90df04169d533e9bc0b4a6a5b2",
+			"keccak256": "0xa357d802eb5d0232c307f17d21ccccbecfbf701dd2981ceb06cf078a3faa4cae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fc9a774629a91c65fc7aaa17a717106b0e6149b2b350789a9776856a066a9ac2",
-				"dweb:/ipfs/QmS7dp4CbNS7RFDjMdM36gHwoRJR2nVgCADaBGkWAiSWtx"
+				"bzz-raw://c17b28bb43fdd173fa0d816a60fa369e0bed97dc437fcd4558926337acf007d7",
+				"dweb:/ipfs/QmNvhQ13ApghxhfbxiwRhRnh4ef42BSPpoozD5Uw89HekQ"
 			]
 		}
 	},

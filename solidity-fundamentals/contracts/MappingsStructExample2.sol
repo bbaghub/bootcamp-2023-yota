@@ -22,7 +22,7 @@ contract MappingsStructExample2 {
 
     function sendMoney() public payable {
         balanceReceived[msg.sender].totalBalance += msg.value;
-        Payment memory payment = Payment(msg.value, now);
+        Payment memory payment = Payment(msg.value, block.timestamp);
         balanceReceived[msg.sender].payments[balanceReceived[msg.sender].numPayments] = payment;
         balanceReceived[msg.sender].numPayments++;
     }
@@ -34,8 +34,8 @@ contract MappingsStructExample2 {
     }
 
     function withdrawAllMoney(address payable _to) public {
-        uint balanceToSend = balanceReceived[msg.sender];
-        balanceReceived[msg.sender] = 0;
+        uint balanceToSend = balanceReceived[msg.sender].totalBalance;
+        balanceReceived[msg.sender].totalBalance = 0;
         _to.transfer(balanceToSend);
     }
 }

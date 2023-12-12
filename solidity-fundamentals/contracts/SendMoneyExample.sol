@@ -8,12 +8,12 @@ contract SendMoneyExample {
         balanceReceived += msg.value;
     }
 
-    functin getBalance() public view returns(uint) {
+    function getBalance() public view returns(uint) {
         return address(this).balance;
     }
 
     function withdrawMoney() public {
-        address payable to = msg.sender;
+        address payable to = payable(msg.sender);
         to.transfer(this.getBalance());
     }
 

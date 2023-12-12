@@ -17,7 +17,7 @@ contract WorkingWithVariables {
     uint8 public myUint8;
 
     function incrementUint() public {
-        myUnit8++;
+        myUint8++;
     }
 
     function decrementUint() public {
