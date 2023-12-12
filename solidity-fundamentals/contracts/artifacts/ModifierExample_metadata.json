@@ -12,6 +12,20 @@
 			},
 			{
 				"inputs": [],
+				"name": "burnToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createNewToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getOwner",
 				"outputs": [
 					{
@@ -37,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-fundamentals/contracts/Modifier.sol": "ModifierExample"
+			"solidity-fundamentals/contracts/ModifierExample.sol": "ModifierExample"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -51,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity-fundamentals/contracts/Modifier.sol": {
-			"keccak256": "0x218834a37bcc36f0ad49b999d1a3c2e8f151c4077b58cb0c189a0f0304f6fbbd",
+		"solidity-fundamentals/contracts/ModifierExample.sol": {
+			"keccak256": "0xd005ab1773a8e8f93627d146add12cb5da62f48f262dfe9110afc6420a1d9a8e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://881d005ce33c6844f5113b290fc94bc5aad4e10b10796310e5cf3c1d3cbd096d",
-				"dweb:/ipfs/QmQiadzRgMR6BCvVyBRmYYw1jxm5No4rTJVNrqg1mYTY7p"
+				"bzz-raw://2d54998be4c2836d398c25426725bd0ea085fdd0994e4143fdb46332ce470dbb",
+				"dweb:/ipfs/QmVuYxYtgHneZ2E3vV9QwQb7mzggQVtWtS5umJkFKHM3Ma"
 			]
 		}
 	},

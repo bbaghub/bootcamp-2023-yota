@@ -13,23 +13,18 @@ contract FunctionsExample {
         tokenBalance[owner] = 100;
     }
 
-    // modifier
-    modifier onlyOwner {
-        require(msg.sender == owner, "You are not allowed");
-        _;
-    }
-
 
     function getOwner() public view returns(address) {
         return owner;
     }
     
     function createNewToken() public {
-        
+        require(msg.sender == owner, "You are not authorized");
         tokenBalance[owner]++;
     }
 
     function burnToken() public {
+        require(msg.sender == owner, "You are not authorized");
         tokenBalance[owner]--;
     }
     
