@@ -85,11 +85,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/StartStopUpdateExample.sol": {
-			"keccak256": "0xf6e68fd2ec122adc92a1b79626cf07a0c3d5ede4ee1e286b44183e79e15b7bb2",
+			"keccak256": "0x788e474810a35c5b6bacb8941581d4f28900d9a5b51461ba580ab43ca2c56b3d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cac6a612881fb15d0feecaedc9788f693aa67b36537717ee55a1d9d7dd385370",
-				"dweb:/ipfs/QmRPUJgkk4CcApThxG1kmXyW1uV1UNjqx8BiF1AbMGvJgX"
+				"bzz-raw://c2988067d77e063b261081da5a7a8ee81501185eb525d8789a1d527121dfccf0",
+				"dweb:/ipfs/QmT56Lwek6QBQNXXY4MFyHco2z6JLDJELc1ngWQor2BoST"
 			]
 		}
 	},

@@ -92,11 +92,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/SimpleMappingExample.sol": {
-			"keccak256": "0x49e97d27cbf505c0b1b2a58eb20f57f65fd75c2b690ac2d707132617fa93311f",
+			"keccak256": "0x3f1e246d54826779fd511c0bbc780a3dd437eb52e081d674225e8c556117c602",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47e168c60063539e7fc6585db37b2c7c5ae8b362aace5b872fc98ac2e7b2a86f",
-				"dweb:/ipfs/QmZP4JiHvfweJopyG8V3aLXiekF7AxLZRjesDvzUfiobGc"
+				"bzz-raw://e8b806c01c3f6a2d42f94295a873bfa0b66ba49ec3670e7a47cd6e0d5054cb38",
+				"dweb:/ipfs/QmdrL6s6UqPQUiBJRbq6R2WE7FMxd4SdVtSFnf1i3x92Kk"
 			]
 		}
 	},

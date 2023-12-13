@@ -1,0 +1,191 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "admin_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "ExistingLandOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NoLandOwner",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "landAddress",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "oldOwner",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newOwner",
+						"type": "string"
+					}
+				],
+				"name": "ChangedLandOwner",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "landAddress",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					}
+				],
+				"name": "NewLandOwner",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "landAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					}
+				],
+				"name": "assignOwnership",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "landAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "newOwner",
+						"type": "string"
+					}
+				],
+				"name": "changeOwnership",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "landOwner",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"assignOwnership(string,string)": {
+					"notice": "Assign a land to an owner can only be called by admin"
+				},
+				"changeOwnership(string,string)": {
+					"notice": "change owner of land to new owner can only be called by admin"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity-fundamentals/contracts/GhanaAsaase.sol": "GhanaAsaase"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity-fundamentals/contracts/GhanaAsaase.sol": {
+			"keccak256": "0x826d3ddb778cf3e99468ef0dac02f4c6a0c3405e0468752791852903f51c9250",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5947d9094564a126c44d3581d9110cfb17834044b5f0f268aec00d101bf2b320",
+				"dweb:/ipfs/QmcfQfAsHzr1vZxW8W8HAvDjaUkBo2SAjCTjuaudK73w8A"
+			]
+		}
+	},
+	"version": 1
+}

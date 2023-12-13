@@ -87,11 +87,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/SendMoneyExample.sol": {
-			"keccak256": "0xfd176827d2b9be9e8f3423dee851652c780517a1659c5ea24418c94e4d9e8574",
+			"keccak256": "0xbe415b9b4b26f97cda72f522f8db6f789629d0da99cbf79a2b3e5b3bca03ca89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d7a010b1c38433da69e375bdcc5992b126f731966d8d3f8597b300abb0235c0",
-				"dweb:/ipfs/Qmd7G1TnkEa4ahYZs7LHSivNYMnkAT6zTWcc28T55FXyFq"
+				"bzz-raw://683730942766745a17878d4ed4adbe0865d5047a8b1192af3a3ed85151dac7f3",
+				"dweb:/ipfs/QmUih6Xtjt4GzLWHphyFQKXRAQ6MScDEqrGXYmp8Jdwbmx"
 			]
 		}
 	},

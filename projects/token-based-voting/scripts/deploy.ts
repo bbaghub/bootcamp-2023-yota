@@ -1,18 +1,13 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const Token = await ethers.getContractFactory("Token");
-  const Voting = await ethers.getContractFactory("Voting");
+  const token = await ethers.deployContract("Token");
+  await token.waitForDeployment();
+  console.log(`Token deployment successful at address: ${await token.getAddress()}`);
 
-  // Deploy Token contract
-  const token = await Token.deploy();
-  await token.deployed();
-  console.log("Token deployed to:", token.address);
-
-  // Deploy Voting contract
-  const voting = await Voting.deploy(token.address);
-  await voting.deployed();
-  console.log("Voting deployed to:", voting.address);
+  const voting = await ethers.deployContract("Voting", [token.getAddress()]);
+  await voting.waitForDeployment();
+  console.log(`Voting deployment successful at address: ${await voting.getAddress()}`);
 }
 
 

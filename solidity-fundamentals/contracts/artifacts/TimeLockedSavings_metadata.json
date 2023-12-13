@@ -1,0 +1,250 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "EmptyPurpose",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidDepositAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidDuration",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NotVaultOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "VaultInactive",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "VaultLocked",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ZeroTargetAmount",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ZeroValue",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "VaultCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawal",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_targetAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_purpose",
+						"type": "string"
+					}
+				],
+				"name": "createVault",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "depositVault",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_targetAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "minDeposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minDuration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "vaults",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "depositAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "targetAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lockEndTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "purpose",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "withdrawn",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vaultId",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawVault",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity-fundamentals/contracts/TimeLockedSavings.sol": "TimeLockedSavings"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity-fundamentals/contracts/TimeLockedSavings.sol": {
+			"keccak256": "0xb52904a9c58958e3220305d0ef541a1165bf87ee7a87f2ba45b4196ca64d69e7",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://bcec0d7759c43524005754feff3992fee433479b27f803f9b56118827d529fb0",
+				"dweb:/ipfs/QmcJA89C8Hpr3VFzV8nzQPEyjZTcjfhD7s2NtxCk4Uvg4E"
+			]
+		}
+	},
+	"version": 1
+}

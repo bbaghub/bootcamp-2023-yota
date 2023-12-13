@@ -1,56 +1,48 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.19;
 
 import "./Token.sol"; // Import the Token contract
 
 contract Voting {
     Token public tokenContract;
     address public owner;
-    uint256 public winner;
 
-    enum Proposal {
-        ProposalA,
-        ProposalB
+    enum Candidate {
+        Bawumia,
+        Mahama
     }
-    Proposal[] public proposals;
 
     mapping(address => uint256) public votes;
+    mapping(Candidate => uint256) public votingResults;
 
-    event VoteCast(address indexed voter, Proposal proposal);
+    event VoteCast(address voter, Candidate candidate);
 
     constructor(address _tokenAddress) {
         tokenContract = Token(_tokenAddress);
         owner = msg.sender;
-        proposals.push(Proposal.ProposalA);
-        proposals.push(Proposal.ProposalB);
     }
 
-    function vote(Proposal _proposal) external {
+    function vote(Candidate _candidate) public {
         require(
             tokenContract.balanceOf(msg.sender) > 0,
             "You have no tokens to vote"
         );
         require(
-            _proposal == Proposal.ProposalA || _proposal == Proposal.ProposalB,
+            _candidate == Candidate.Bawumia || _candidate == Candidate.Mahama,
             "Invalid proposal"
         );
 
-        votes[msg.sender] = uint256(_proposal);
-        emit VoteCast(msg.sender, _proposal);
+        votes[msg.sender]++;
+        votingResults[_candidate]++;
+        emit VoteCast(msg.sender, _candidate);
     }
 
-    function tallyVotes()
-        external
+    function displayResults()
+        public
         view
-        returns (uint256 votesProposalA, uint256 votesProposalB)
+        returns (uint256 bawumia, uint256 mahama)
     {
-        for (uint256 i = 0; i < proposals.length; i++) {
-            Proposal proposal = proposals[i];
-            if (proposal == Proposal.ProposalA) {
-                votesProposalA += votes[msg.sender];
-            } else if (proposal == Proposal.ProposalB) {
-                votesProposalB += votes[msg.sender];
-            }
-        }
+        bawumia = votingResults[Candidate.Bawumia];
+        mahama = votingResults[Candidate.Mahama];
     }
 }

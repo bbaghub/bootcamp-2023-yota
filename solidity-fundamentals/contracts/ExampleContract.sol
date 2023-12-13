@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.19;
 
 // Importing a basic ownership contract as an example of inheritance and import
 import "@openzeppelin/contracts/access/Ownable.sol";

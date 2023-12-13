@@ -20,20 +20,38 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "address",
 						"name": "voter",
 						"type": "address"
 					},
 					{
 						"indexed": false,
-						"internalType": "enum Voting.Proposal",
-						"name": "proposal",
+						"internalType": "enum Voting.Candidate",
+						"name": "candidate",
 						"type": "uint8"
 					}
 				],
 				"name": "VoteCast",
 				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "displayResults",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "bawumia",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mahama",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -43,43 +61,6 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "proposals",
-				"outputs": [
-					{
-						"internalType": "enum Voting.Proposal",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "tallyVotes",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "votesProposalA",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "votesProposalB",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -101,8 +82,8 @@
 			{
 				"inputs": [
 					{
-						"internalType": "enum Voting.Proposal",
-						"name": "_proposal",
+						"internalType": "enum Voting.Candidate",
+						"name": "_candidate",
 						"type": "uint8"
 					}
 				],
@@ -131,8 +112,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "winner",
+				"inputs": [
+					{
+						"internalType": "enum Voting.Candidate",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "votingResults",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -212,11 +199,11 @@
 			]
 		},
 		"solidity-fundamentals/contracts/TokenBasedVoting.sol": {
-			"keccak256": "0x36b5013980dcb2cddb9b168ea7785910ede5ed9bc1932a2091c5bc85e94bad0e",
+			"keccak256": "0x9428296bb0fa869331bb2f41d0d38ba7e439170eff00821166f5da82b6bc1c9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79c0838aab578e565f34f0271777193d7f3549e65f98c0fce93bdf1e14223614",
-				"dweb:/ipfs/QmQbuReaUXbwUrmSnA2cHYcaiAZuHDQEHqAb3cTeGuzPES"
+				"bzz-raw://543d31fbd6eb929c945de73ca87f4c2b8b300452ad172273d932f00aa1e19454",
+				"dweb:/ipfs/QmTGUqLYH4UcwnGg1eneN8m3kG8DFc1PSLKB4kDGsehzm2"
 			]
 		}
 	},

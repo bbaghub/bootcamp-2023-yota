@@ -47,11 +47,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/MyFirstContract.sol": {
-			"keccak256": "0x350c4092678266ecf3a13faad8aaea5640d30c0969eba165acdbe7597ad3d949",
+			"keccak256": "0x8a7f8c1ca6796c8cf1aae797cdd00f9ec59872a270a155995b16122f3a4c8ada",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b4403f3c3700746c3138d9e4b6cb377e7915d0aba904d159adda909691a0826",
-				"dweb:/ipfs/QmUWeX399FcT5RGsuVubVVfzSEgmEevvZwpYFXbfoVeqUC"
+				"bzz-raw://8369c96362317bb271347c642b23cf67572424b2a30a5041d727971129ebd19f",
+				"dweb:/ipfs/QmVaAAkaixWYhGsChXcNXZ99aptzDtH6gQED6g7pMb24yG"
 			]
 		}
 	},

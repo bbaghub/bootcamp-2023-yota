@@ -104,11 +104,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/MappingsStructExample1.sol": {
-			"keccak256": "0x0b38b41287ce519e60e13b43a2b27e0ab01efe360333b6fa1f7bb146efd754c0",
+			"keccak256": "0x17d9187e5a50338283fbdf3c12cda47fe225771c9bba294fedb6d1b0630f189e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bfb3a7823392af41fdbfcad429e1328dee7bfcc0340d2096ab9c214499afe73c",
-				"dweb:/ipfs/QmeMcVad2sxhaAYycaGBbr5iKmCtAwaaf3H99HiXTC36j7"
+				"bzz-raw://101558e45c733096ce3de76fc494cf8355b8e08a1f7efe63a9240291a8461b35",
+				"dweb:/ipfs/QmcS4bDMgP5UoGgg9csFdXi9R2iLRCNwj1Tp5Uce9ucXok"
 			]
 		}
 	},

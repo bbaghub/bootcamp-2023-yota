@@ -256,11 +256,11 @@
 			]
 		},
 		"solidity-fundamentals/contracts/ExampleContract.sol": {
-			"keccak256": "0x6261efda68c8e6283229b3a5c467fb44f679747805b66003fe2bcf286070f7db",
+			"keccak256": "0x3f81fc579fd2154509083f1f2e141acea6298b310df1869c0eca221b5b73aaa1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bb80196f25b43ef8a816bc7f44a76e8c75b4b5930e6e935402dbf209c2089c61",
-				"dweb:/ipfs/QmURCAevYc1jMYtYEKBJrmYcu9ddBn8T8ZfvEAhc3dRKGB"
+				"bzz-raw://926a060ed26ebb496f1e6f2f1d48520d1fdf321595627d6b65189b712feeca0b",
+				"dweb:/ipfs/QmPeP3n73cXaW3ybFZRSodoEmeEXVNLazuxtV6vJwKkGMY"
 			]
 		}
 	},

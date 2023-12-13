@@ -1,9 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
-// Uncomment this line to use console.log
-// import "hardhat/console.sol";
-
 contract TimeLockedSavings {
     // structs
 
@@ -50,8 +47,7 @@ contract TimeLockedSavings {
     }
 
     modifier vaultUnlocked(uint256 vaultId) {
-        if (vaults[vaultId].lockEndTime >= block.timestamp)
-            revert VaultLocked();
+        if (vaults[vaultId].lockEndTime >= block.timestamp) revert VaultLocked();
         _;
     }
 
