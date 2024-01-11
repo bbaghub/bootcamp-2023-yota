@@ -6,10 +6,12 @@ contract SendMoneyExample {
 
     function receiveMoney() public payable {
         balanceReceived += msg.value;
+        // balanceReceived = balanceReceived + msg.value;
     }
 
     function getBalance() public view returns(uint) {
         return address(this).balance;
+        //return balanceReceived;
     }
 
     function withdrawMoney() public {

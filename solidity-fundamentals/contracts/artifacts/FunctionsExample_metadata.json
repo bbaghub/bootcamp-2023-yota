@@ -4,40 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "burnToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "createNewToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getOwner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -51,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-fundamentals/contracts/FunctionsExample.sol": "FunctionsExample"
+			"solidity-fundamentals/contracts/Example.sol": "FunctionsExample"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -65,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity-fundamentals/contracts/FunctionsExample.sol": {
-			"keccak256": "0x23edf35c073fee659aa49f229931f681f3f6ce407d6a90b835e73bb95a477025",
+		"solidity-fundamentals/contracts/Example.sol": {
+			"keccak256": "0x35682848ccb0d66ea47748accfbf50909ab34c918bd4d14cf3c53a74d7881198",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://41566710dae03a8634e377fb07dd5333b83e7855870f463e379c6b0cdce28196",
-				"dweb:/ipfs/QmejGGbg5Lg2sYJCcC3xffZwKcT6xtoS8VoVzYGmRXUZ6Y"
+				"bzz-raw://6b6700d0603e33a9b7454589534f520bbe01a27fad28906786a78784c7d389b0",
+				"dweb:/ipfs/QmV4LkDGCoVd45WX6JN3WzcPvZvmY7vqEuciRFzcbkNEVD"
 			]
 		}
 	},

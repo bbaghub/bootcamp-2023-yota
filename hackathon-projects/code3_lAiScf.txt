@@ -1,0 +1,130 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+/* - admininstrator should be the only one to create feedback categories
+
+function for users to post feedback in any of the categories
+
+-feedback categories
+
+-*/
+
+ 
+
+contract AnonymousFeedback {
+
+    struct Feedback {
+
+        string category;
+
+        string message;
+
+    }
+
+    event FeedbackSubmitted(string category, string message);
+
+    error Invalid_Category();
+
+    error Invalid_Message();
+
+    error Not_Administrator();
+
+    error Category_Exist();
+
+ 
+
+    Feedback[] public feedbackList;
+
+    address public administrator;
+
+    mapping (string => bool) public categories;
+
+    mapping (string => Feedback[]) public feedbackCategory;
+
+ 
+
+   
+
+ 
+
+    constructor () {
+
+        administrator = msg.sender;
+
+    }
+
+ 
+
+    modifier isAdmin() {
+
+        if(msg.sender != administrator) {
+
+            revert Not_Administrator();
+
+        }
+
+        _;
+
+    }
+
+ 
+
+    function createCategory(string memory _category) public isAdmin{
+
+        if(categories[_category]) {
+
+            revert Category_Exist();
+
+        }
+
+        categories[_category] = true;
+
+        feedbackCategory[_category];
+
+ 
+
+    }
+
+ 
+
+    function submitFeedback(string memory _category, string memory _message) external {
+
+        if(bytes(_category).length == 0) {
+
+            revert Invalid_Category();
+
+        }
+
+        if(bytes(_message).length == 0) {
+
+            revert Invalid_Message();
+
+        }
+
+ 
+
+        feedbackList.push(Feedback(_category, _message));
+
+ 
+
+        emit FeedbackSubmitted(_category, _message);
+
+    }
+
+ 
+
+    function getFeedback(uint256 _index) external view returns (string memory, string memory) {
+
+        require(_index < feedbackList.length, "Invalid feedback index");
+
+ 
+
+        Feedback memory feedback = feedbackList[_index];
+
+        return (feedback.category, feedback.message);
+
+    }
+
+}
+

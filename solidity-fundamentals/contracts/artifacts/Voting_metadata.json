@@ -198,12 +198,20 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
+		"solidity-fundamentals/contracts/Token.sol": {
+			"keccak256": "0x7c286ef111665dbb6d44d621514c5f8629ba05ef45993748d92ca54ec06d8f0b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c62c56ff9cd6fbcd89752a72532402837e97cac1601ad77d738d0b04942a1cd9",
+				"dweb:/ipfs/QmRaiz86BS4Y4ZRhf8MSwijW4Xo3faACxTX6URonLcjtYR"
+			]
+		},
 		"solidity-fundamentals/contracts/TokenBasedVoting.sol": {
-			"keccak256": "0x9428296bb0fa869331bb2f41d0d38ba7e439170eff00821166f5da82b6bc1c9f",
+			"keccak256": "0x3e95d764529ecdee28d06d8deb83d8c9e6b090d6a6af58ac74a4ec54b15bfdd9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://543d31fbd6eb929c945de73ca87f4c2b8b300452ad172273d932f00aa1e19454",
-				"dweb:/ipfs/QmTGUqLYH4UcwnGg1eneN8m3kG8DFc1PSLKB4kDGsehzm2"
+				"bzz-raw://f9eac69096586ae9a4d3e819f4a72c3e46b3d0a73a664ebdb1a0207838a403ed",
+				"dweb:/ipfs/QmTFZcg8bhEJ9PeocLFCRqHTevLFVktQAYqwUbNZYHznZa"
 			]
 		}
 	},

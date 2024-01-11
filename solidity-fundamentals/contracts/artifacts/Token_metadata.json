@@ -147,6 +147,39 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "__mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "_burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -453,7 +486,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-fundamentals/contracts/TokenBasedVoting.sol": "Token"
+			"solidity-fundamentals/contracts/Token.sol": "Token"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -507,12 +540,12 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
-		"solidity-fundamentals/contracts/TokenBasedVoting.sol": {
-			"keccak256": "0x9428296bb0fa869331bb2f41d0d38ba7e439170eff00821166f5da82b6bc1c9f",
-			"license": "MIT",
+		"solidity-fundamentals/contracts/Token.sol": {
+			"keccak256": "0x7c286ef111665dbb6d44d621514c5f8629ba05ef45993748d92ca54ec06d8f0b",
+			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://543d31fbd6eb929c945de73ca87f4c2b8b300452ad172273d932f00aa1e19454",
-				"dweb:/ipfs/QmTGUqLYH4UcwnGg1eneN8m3kG8DFc1PSLKB4kDGsehzm2"
+				"bzz-raw://c62c56ff9cd6fbcd89752a72532402837e97cac1601ad77d738d0b04942a1cd9",
+				"dweb:/ipfs/QmRaiz86BS4Y4ZRhf8MSwijW4Xo3faACxTX6URonLcjtYR"
 			]
 		}
 	},

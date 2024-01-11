@@ -178,11 +178,11 @@
 	},
 	"sources": {
 		"solidity-fundamentals/contracts/Variables.sol": {
-			"keccak256": "0x28b30807a6b9d0cd218082312cfc304aa65ea83fafe2df86ebae0c9b8d8ac592",
+			"keccak256": "0xa357d802eb5d0232c307f17d21ccccbecfbf701dd2981ceb06cf078a3faa4cae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://44ce1ea85bccb732b1c1dfa2a348fb6ba2a24079588153212743c62ff14a82c9",
-				"dweb:/ipfs/QmZefmu1HbqaMdDtszhVN95JZgpAYtk6FZhsqd8EhEuCgp"
+				"bzz-raw://c17b28bb43fdd173fa0d816a60fa369e0bed97dc437fcd4558926337acf007d7",
+				"dweb:/ipfs/QmNvhQ13ApghxhfbxiwRhRnh4ef42BSPpoozD5Uw89HekQ"
 			]
 		}
 	},
